@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAI Loops</title>
+<meta name="description" content="Seamless hero loops for LE-VAI's open work, each with its seam proof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Atkinson+Hyperlegible+Mono:wght@400;600&display=swap">
+<style>
+  :root { color-scheme: dark; --ground:#0D0D0C; --raise:#161614; --line:#2A2925; --ink:#F3F1EA; --ink-2:#CFCCC2; --mute:#9E9A8F; --vai:#FFC828; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.55 "Atkinson Hyperlegible Next", system-ui, sans-serif; padding-inline: clamp(16px, 4vw, 48px); padding-block: 0 80px; }
+  .wrap { max-width: 1040px; margin-inline: auto; }
+  header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+  .mark { display: flex; align-items: center; gap: 12px; font: 700 16px "Unbounded", sans-serif; letter-spacing: .02em; color: var(--ink); text-decoration: none; }
+  .mark svg { width: 30px; height: 30px; }
+  .all { font: 600 14px "Atkinson Hyperlegible Mono", monospace; letter-spacing: .06em; }
+  h1 { font: 700 clamp(30px, 5vw, 52px)/1.05 "Unbounded", sans-serif; letter-spacing: -.02em; margin: 56px 0 16px; text-wrap: balance; }
+  .lede { color: var(--ink-2); max-width: 62ch; margin: 0 0 48px; }
+  .loops { display: grid; gap: 64px; }
+  .loop { margin: 0; display: grid; gap: 16px; }
+  .frame { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 2 / 1; }
+  video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  figcaption { display: grid; gap: 8px; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  h2 { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font: 700 20px "Atkinson Hyperlegible Next", sans-serif; }
+  h2 a { color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  h2 span { font: 400 14px "Atkinson Hyperlegible Mono", monospace; color: var(--mute); }
+  figcaption p { margin: 0; color: var(--ink-2); max-width: 70ch; }
+  .proof { font: 400 13.5px/1.6 "Atkinson Hyperlegible Mono", monospace; color: var(--mute) !important; }
+  button { min-height: 44px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--raise); color: var(--ink); font: 600 14px "Atkinson Hyperlegible Mono", monospace; cursor: pointer; }
+  button:hover { border-color: var(--mute); }
+  button[aria-pressed="true"] { border-color: var(--vai); color: var(--vai); }
+  :focus-visible { outline: 3px solid var(--vai); outline-offset: 3px; }
+  footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--mute); font-size: 15px; }
+  footer a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="https://github.com/LE-VAI">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <line x1="72" y1="28" x2="28" y2="72" stroke="#FECC35" stroke-width="15" stroke-linecap="round"/>
+        <line x1="28" y1="28" x2="72" y2="72" stroke="#0D0D0C" stroke-width="23" stroke-linecap="round"/>
+        <line x1="28" y1="28" x2="72" y2="72" stroke="#FECC35" stroke-width="15" stroke-linecap="round"/>
+        <path fill="#FECC35" d="M50 34 C47 29 43 25.5 43 20 A7 7 0 0 1 57 20 C57 25.5 53 29 50 34 Z"/>
+        <path fill="#FECC35" d="M50 66 C47 71 43 74.5 43 80 A7 7 0 0 0 57 80 C57 74.5 53 71 50 66 Z"/>
+        <path fill="#FECC35" d="M34 50 C29 47 25.5 43 20 43 A7 7 0 0 0 20 57 C25.5 57 29 53 34 50 Z"/>
+        <path fill="#FECC35" d="M66 50 C71 47 74.5 43 80 43 A7 7 0 0 1 80 57 C74.5 57 71 53 66 50 Z"/>
+      </svg>
+      LE-VAI
+    </a>
+    <button type="button" class="all" id="all" aria-pressed="false">❚❚ Pause all loops</button>
+  </header>
+  <h1>Loops, on repeat.</h1>
+  <p class="lede">Each loop ends exactly where it begins. Rendering the last instant gives a frame identical to the first, and the encodes add no more artifact at the seam than anywhere else in the file. They play while on screen. Every loop has its own pause button, and none of them start on their own if you have asked your system for reduced motion.</p>
+  <main class="loops">
+    <figure class="loop" id="designesy" style="--accent:#3358E8">
+      <div class="frame">
+        <video muted loop playsinline preload="metadata" poster="media/designesy-poster.jpg" aria-describedby="designesy-desc">
+          <source src="media/designesy-av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'>
+          <source src="media/designesy.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption>
+        <div class="row">
+          <h2><a href="https://github.com/LE-VAI/designesy-org">designesy</a><span>6 s loop · 180 frames</span></h2>
+          <button type="button" class="toggle" aria-pressed="false" aria-label="Pause the designesy loop"><span aria-hidden="true">❚❚</span> Pause</button>
+        </div>
+        <p id="designesy-desc">The engine&#x27;s checks sweep a generic page. v03 fails (no focus-visible ring) and v06 warns (muted text 3.8 to 1). Neither caps the score, so the page grades A.</p>
+        <p class="proof">t = 0 vs t = 6 s: 0 difference · seam codec error 0.1984 (AV1) and 0.1843 (H.264), within each file&#x27;s interior maximum</p>
+      </figcaption>
+    </figure>
+    <figure class="loop" id="read-along" style="--accent:#FFC828">
+      <div class="frame">
+        <video muted loop playsinline preload="metadata" poster="media/read-along-poster.jpg" aria-describedby="read-along-desc">
+          <source src="media/read-along-av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'>
+          <source src="media/read-along.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption>
+        <div class="row">
+          <h2><a href="https://github.com/LE-VAI/read-along">read-along</a><span>4.8 s loop · 144 frames</span></h2>
+          <button type="button" class="toggle" aria-pressed="false" aria-label="Pause the read-along loop"><span aria-hidden="true">❚❚</span> Pause</button>
+        </div>
+        <p id="read-along-desc">A three-line passage on a conveyor. The highlight follows each word as it is spoken, and the line lifts when it is done.</p>
+        <p class="proof">t = 0 vs t = 4.8 s: 0 difference · seam codec error 0.1332 (AV1) and 0.0793 (H.264), within each file&#x27;s interior maximum</p>
+      </figcaption>
+    </figure>
+    <figure class="loop" id="access-input" style="--accent:#FFC828">
+      <div class="frame">
+        <video muted loop playsinline preload="metadata" poster="media/access-input-poster.jpg" aria-describedby="access-input-desc">
+          <source src="media/access-input-av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'>
+          <source src="media/access-input.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption>
+        <div class="row">
+          <h2><a href="https://github.com/LE-VAI/access-input">access-input</a><span>4.8 s loop · 144 frames</span></h2>
+          <button type="button" class="toggle" aria-pressed="false" aria-label="Pause the access-input loop"><span aria-hidden="true">❚❚</span> Pause</button>
+        </div>
+        <p id="access-input-desc">A gaze dwells for 600 ms to select Read, More, and Yes. A glance at Help ends before the dwell completes, so it cancels. Every event lands in the log.</p>
+        <p class="proof">t = 0 vs t = 4.8 s: 0 difference · seam codec error 0.0459 (AV1) and 0.0458 (H.264), within each file&#x27;s interior maximum</p>
+      </figcaption>
+    </figure>
+    <figure class="loop" id="rf-compute" style="--accent:#FF8A5B">
+      <div class="frame">
+        <video muted loop playsinline preload="metadata" poster="media/rf-compute-poster.jpg" aria-describedby="rf-compute-desc">
+          <source src="media/rf-compute-av1.mp4" type='video/mp4; codecs="av01.0.08M.08"'>
+          <source src="media/rf-compute.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption>
+        <div class="row">
+          <h2><a href="https://github.com/LE-VAI/rf-compute">rf-compute</a><span>4 s loop · 120 frames</span></h2>
+          <button type="button" class="toggle" aria-pressed="false" aria-label="Pause the rf-compute loop"><span aria-hidden="true">❚❚</span> Pause</button>
+        </div>
+        <p id="rf-compute-desc">Two carriers at one and two cycles per loop. Their sum, sampled as stems, is the operation.</p>
+        <p class="proof">t = 0 vs t = 4 s: 0 difference · seam codec error 0.3286 (AV1) and 0.3044 (H.264), within each file&#x27;s interior maximum</p>
+      </figcaption>
+    </figure>
+  </main>
+  <footer>Rendered with HyperFrames. Proof tooling and sources: <a href="https://github.com/LE-VAI/LE-VAI">LE-VAI/LE-VAI</a>.</footer>
+</div>
+<script>
+(() => {
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const loops = [...document.querySelectorAll(".loop")].map((fig) => ({
+    video: fig.querySelector("video"), button: fig.querySelector(".toggle"), paused: reduced, inView: false }));
+  const allBtn = document.getElementById("all");
+  const render = (l) => {
+    l.button.setAttribute("aria-pressed", String(l.paused));
+    l.button.innerHTML = l.paused ? '<span aria-hidden="true">▶</span> Play' : '<span aria-hidden="true">❚❚</span> Pause';
+    if (!l.paused && l.inView) l.video.play().catch(() => {}); else l.video.pause();
+  };
+  const renderAll = () => {
+    const allPaused = loops.every((l) => l.paused);
+    allBtn.setAttribute("aria-pressed", String(allPaused));
+    allBtn.textContent = allPaused ? "▶ Play all loops" : "❚❚ Pause all loops";
+  };
+  const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+    const l = loops.find((x) => x.video === e.target); l.inView = e.isIntersecting; render(l);
+  }), { threshold: 0.25 });
+  loops.forEach((l) => {
+    io.observe(l.video);
+    l.button.addEventListener("click", () => { l.paused = !l.paused; render(l); renderAll(); });
+    render(l);
+  });
+  allBtn.addEventListener("click", () => {
+    const pauseAll = !loops.every((l) => l.paused);
+    loops.forEach((l) => { l.paused = pauseAll; render(l); }); renderAll();
+  });
+  renderAll();
+})();
+</script>
+</body>
+</html>
