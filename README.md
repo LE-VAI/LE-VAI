@@ -47,4 +47,4 @@ These libraries compose. access-input turns a switch, gaze, or EMG signal into t
   </tr>
 </table>
 
-Daily notes, experiments, and progress live in **[build-log](https://github.com/LE-VAI/build-log)**.
+Build notes, experiments, and progress logs live in **[build-log](https://github.com/LE-VAI/build-log)**.
