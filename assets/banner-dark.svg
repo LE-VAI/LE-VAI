@@ -10,15 +10,15 @@
     .tag  { font-family: "VAI Body", "Segoe UI", sans-serif; font-size: 30px; fill: #CFCCC2; }
     .grp  { font-family: "VAI Mono", ui-monospace, monospace; font-weight: 600; font-size: 19px; letter-spacing: 2.5px; }
 
-    .drop { transform-box: fill-box; transform-origin: center; animation: bloom .7s cubic-bezier(.2,.9,.25,1.15) backwards; }
-    .bar  { stroke-dasharray: 64; animation: draw .55s cubic-bezier(.6,0,.2,1) backwards; }
+    .drop { transform-box: fill-box; transform-origin: center; animation: bloom .4s cubic-bezier(.2,0,0,1) backwards; }
+    .bar  { stroke-dasharray: 1; animation: draw .5s cubic-bezier(.2,0,0,1) backwards; }
     .bar-b { animation-delay: .05s; }
     .bar-f { animation-delay: .3s; }
     .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) backwards; }
     .r1 { animation-delay: .9s; } .r2 { animation-delay: 1.1s; } .r3 { animation-delay: 1.25s; } .r4 { animation-delay: 1.45s; }
 
     @keyframes bloom { from { opacity: 0; transform: scale(.2); } }
-    @keyframes draw  { from { stroke-dashoffset: 64; } }
+    @keyframes draw  { from { stroke-dashoffset: 1; } }
     @keyframes rise  { from { opacity: 0; transform: translateY(14px); } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
@@ -31,10 +31,10 @@
 <rect x="0.5" y="0.5" width="1279" height="359" rx="19.5" fill="none" stroke="#2A2925"/>
 <g transform="translate(92 88)">
   <rect width="184" height="184" rx="36" fill="#000000" stroke="#2A2925"/>
-  <g transform="translate(92 92) scale(1.9)"><path class="drop" style="animation-delay:0.55s" fill="#FFC400" d="M0 -16 C-3 -21 -7 -24.5 -7 -30 A7 7 0 0 1 7 -30 C7 -24.5 3 -21 0 -16 Z"/><path class="drop" style="animation-delay:0.63s" fill="#FFC400" d="M16 0 C21 -3 24.5 -7 30 -7 A7 7 0 0 1 30 7 C24.5 7 21 3 16 0 Z"/><path class="drop" style="animation-delay:0.71s" fill="#FFC400" d="M0 16 C-3 21 -7 24.5 -7 30 A7 7 0 0 0 7 30 C7 24.5 3 21 0 16 Z"/><path class="drop" style="animation-delay:0.79s" fill="#FFC400" d="M-16 0 C-21 -3 -24.5 -7 -30 -7 A7 7 0 0 0 -30 7 C-24.5 7 -21 3 -16 0 Z"/><line class="bar bar-b" x1="22" y1="-22" x2="-22" y2="22" stroke="#FFC400" stroke-width="15" stroke-linecap="round"/><line class="bar bar-f" x1="-22" y1="-22" x2="22" y2="22" stroke="#000000" stroke-width="23" stroke-linecap="round"/><line class="bar bar-f" x1="-22" y1="-22" x2="22" y2="22" stroke="#FFC400" stroke-width="15" stroke-linecap="round"/></g>
+  <g transform="translate(92 92) scale(0.25107)"><path class="drop" style="animation-delay:0.55s" fill="#FFC400" d="M0 -135.196C20.16 -160.008 40.682 -182.463 48.497 -196A56 56 0 1 0 -48.497 -196C-40.682 -182.463 -20.16 -160.008 0 -135.196Z"/><path class="drop" style="animation-delay:0.63s" fill="#FFC400" d="M135.196 0C160.008 20.16 182.463 40.682 196 48.497A56 56 0 1 0 196 -48.497C182.463 -40.682 160.008 -20.16 135.196 0Z"/><path class="drop" style="animation-delay:0.71s" fill="#FFC400" d="M0 135.196C-20.16 160.008 -40.682 182.463 -48.497 196A56 56 0 1 0 48.497 196C40.682 182.463 20.16 160.008 0 135.196Z"/><path class="drop" style="animation-delay:0.79s" fill="#FFC400" d="M-135.196 0C-160.008 -20.16 -182.463 -40.682 -196 -48.497A56 56 0 1 0 -196 48.497C-182.463 40.682 -160.008 20.16 -135.196 0Z"/><line class="bar bar-b" pathLength="1" x1="0" y1="0" x2="169.71" y2="-169.71" stroke="#FFC400" stroke-width="112" stroke-linecap="round"/><line class="bar bar-b" pathLength="1" x1="0" y1="0" x2="-169.71" y2="169.71" stroke="#FFC400" stroke-width="112" stroke-linecap="round"/><line class="bar bar-f" pathLength="1" x1="-70.71" y1="25.46" x2="-90.51" y2="5.66" stroke="#000000" stroke-width="24" stroke-linecap="round"/><line class="bar bar-f" pathLength="1" x1="70.71" y1="-25.46" x2="90.51" y2="-5.66" stroke="#000000" stroke-width="24" stroke-linecap="round"/><line class="bar bar-f" pathLength="1" x1="0" y1="0" x2="169.71" y2="169.71" stroke="#FFC400" stroke-width="112" stroke-linecap="round"/><line class="bar bar-f" pathLength="1" x1="0" y1="0" x2="-169.71" y2="-169.71" stroke="#FFC400" stroke-width="112" stroke-linecap="round"/></g>
 </g>
 <text class="name rise r1" x="336" y="176">LE-VAI</text>
 <text class="tag rise r2" x="340" y="226">Assistive access, design verification,</text>
 <text class="tag rise r3" x="340" y="264">and wave computing, built in the open.</text>
-<text class="grp rise r4" x="341" y="306"><tspan fill="#FFC400">ACCESSIBILITY</tspan><tspan fill="#8C897F"> · </tspan><tspan fill="#0A94FF">PRODUCT</tspan><tspan fill="#8C897F"> · </tspan><tspan fill="#FF8A5B">RESEARCH</tspan></text>
+<text class="grp rise r4" x="341" y="306"><tspan fill="#FFC400">ACCESSIBILITY</tspan><tspan fill="#8C897F"> · </tspan><tspan fill="#F3F1EA">PRODUCT</tspan><tspan fill="#8C897F"> · </tspan><tspan fill="#FF8A5B">RESEARCH</tspan></text>
 </svg>
