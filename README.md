@@ -24,6 +24,21 @@ Scores any URL against a published design contract: one grade, every check named
 
 <br>
 
+<sub>PRODUCT</sub>
+
+### [sill](https://github.com/LE-VAI/sill)
+
+<a href="https://github.com/LE-VAI/sill"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/loops/sill.png">
+  <img src="assets/loops/sill.webp" width="100%" alt="A dark interface lit by the pointer: a serif headline casts shadows that swing as the cursor moves, then a keypad of raised keys catches moving highlights.">
+</picture></a>
+
+Real-time light for interfaces. The pointer is the light; cards, controls and type cast projected shadows, and the page stays real HTML. A Designesy package.<br>
+<sub>[Repository](https://github.com/LE-VAI/sill)</sub>
+
+
+<br>
+
 <sub>ACCESSIBILITY</sub>
 
 ### [read-along](https://github.com/LE-VAI/read-along)
@@ -54,21 +69,6 @@ One input layer for assistive access. Switch, gaze, EMG and keys reduce to three
 
 <br>
 
-<sub>ACCESSIBILITY</sub>
-
-### [neural-consent](https://github.com/LE-VAI/neural-consent)
-
-<a href="https://github.com/LE-VAI/neural-consent"><picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/loops/neural-consent.png">
-  <img src="assets/loops/neural-consent.webp" width="100%" alt="A four-event consent log: a yellow dot walks each link from one row's hash to the next row's prev, and verify() reports ok.">
-</picture></a>
-
-Purpose-granular consent with a tamper-evident local log, for tools that read a neural or assistive signal on the user's own device. Zero dependencies.<br>
-<sub>[Repository](https://github.com/LE-VAI/neural-consent)</sub>
-
-
-<br>
-
 <sub>RESEARCH</sub>
 
 ### [rf-compute](https://github.com/LE-VAI/rf-compute)
@@ -86,7 +86,7 @@ Radio frequency as a computational substrate. One Python API across four wave-co
 
 <sub>ALSO IN THE OPEN</sub>
 
-- **[sill](https://github.com/LE-VAI/sill)** · Real-time light for interfaces: the pointer is the light. A Designesy package (@designesy/sill).
+- **[neural-consent](https://github.com/LE-VAI/neural-consent)** · Purpose-granular consent with a tamper-evident local log, for neural-data tools.
 - **[read-aloud-tts-windows](https://github.com/LE-VAI/read-aloud-tts-windows)** · Select text in any app, press Home, hear it. Offline neural voices on Windows.
 - **[access-conformance](https://github.com/LE-VAI/access-conformance)** · One instrument across the assistive stack: timing, input and consent in one session.
 - **[accessibility-verification-kit](https://github.com/LE-VAI/accessibility-verification-kit)** · One command, one WCAG 2.2 AA check, one design-contract score.
