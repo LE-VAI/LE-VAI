@@ -86,6 +86,7 @@ Radio frequency as a computational substrate. One Python API across four wave-co
 
 <sub>ALSO IN THE OPEN</sub>
 
+- **[focal](https://github.com/LE-VAI/focal)** · Keyboard focus, carried by real light: a measured focus outline, and with sill the lamp travels to focus. A Designesy package.
 - **[neural-consent](https://github.com/LE-VAI/neural-consent)** · Purpose-granular consent with a tamper-evident local log, for neural-data tools.
 - **[read-aloud-tts-windows](https://github.com/LE-VAI/read-aloud-tts-windows)** · Select text in any app, press Home, hear it. Offline neural voices on Windows.
 - **[access-conformance](https://github.com/LE-VAI/access-conformance)** · One instrument across the assistive stack: timing, input and consent in one session.
