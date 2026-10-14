@@ -8,9 +8,16 @@ I build tools for people who drive a computer with a switch, their gaze, or a si
 
 ## Product
 
-<a href="https://github.com/LE-VAI/designesy-org"><img alt="designesy: AI makes execution free. We make execution yours. Score any URL against a real design contract. A VAI project." src="assets/cards/designesy-org.jpg" width="100%"></a>
+<table>
+  <tr>
+    <td width="50%"><a href="https://github.com/LE-VAI/designesy-org"><img alt="designesy: score any site in seconds. Design contract, score, tokens, and MCP. A VAI project." src="assets/cards/designesy-org.jpg"></a></td>
+    <td width="50%"><a href="https://github.com/LE-VAI/sill"><img alt="sill: real-time light for interfaces. The pointer is the light, and every surface answers it." src="assets/cards/sill.jpg"></a></td>
+  </tr>
+</table>
 
 **[designesy](https://www.designesy.org)** scores any URL against a real design contract, gates your CI on the result, and ships as an MCP server, a GitHub Action, a stylelint plugin, and a CLI.
+
+**[sill](https://github.com/LE-VAI/sill)** lights an interface from the pointer. Cards, controls, and type cast projected shadows and catch highlights, while the page stays real HTML for keyboards and screen readers.
 
 ## Accessibility
 
@@ -26,7 +33,8 @@ These libraries compose. access-input turns a switch, gaze, or EMG signal into t
     <td width="50%"><a href="https://github.com/LE-VAI/neural-consent"><img alt="neural-consent: purpose-granular consent records with a tamper-evident local log, for neural-data tools." src="assets/cards/neural-consent.jpg"></a></td>
   </tr>
   <tr>
-    <td colspan="2"><a href="https://github.com/LE-VAI/read-aloud-tts-windows"><img alt="read-aloud-tts-windows: select text anywhere, press Ctrl and right-click, and hear it. Offline neural voices on Windows." src="assets/cards/read-aloud-tts-windows.jpg" width="100%"></a></td>
+    <td width="50%"><a href="https://github.com/LE-VAI/read-aloud-tts-windows"><img alt="read-aloud-tts-windows: select text anywhere, press Home, and hear it. Offline neural voices on Windows." src="assets/cards/read-aloud-tts-windows.jpg"></a></td>
+    <td width="50%"><a href="https://github.com/LE-VAI/accessibility-verification-kit"><img alt="accessibility-verification-kit: one command, one WCAG 2.2 AA check, one design-contract score. Every figure carries its denominator." src="assets/cards/accessibility-verification-kit.jpg"></a></td>
   </tr>
 </table>
 
